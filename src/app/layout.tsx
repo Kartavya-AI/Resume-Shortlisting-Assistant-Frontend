@@ -20,8 +20,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Personalized News Agent",
-  description: "An AI-powered platform that curates personalized news feeds based on your interests, profile, and queries — delivering relevant, real-time updates in your preferred language.",
+  title: "  Worksheet Generation Tool",
+  description: "An AI-powered platform that automatically creates customizable, curriculum-aligned educational worksheets across subjects and grade levels—saving teachers time and enhancing learning effectiveness.",
 };
 
 export default function RootLayout({

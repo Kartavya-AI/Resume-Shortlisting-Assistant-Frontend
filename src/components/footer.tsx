@@ -8,13 +8,14 @@ function Footer() {
                     
                     {/* Logo + Description */}
                     <div>
-                        <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                            Personalized News Agent
+                        <h3 className="text-xl font-semibold text-gray-900">
+                            Worksheet Generation Tool
                         </h3>
                         <p className="mt-2 text-sm leading-relaxed">
-                            An AI-powered platform that curates personalized news feeds 
-                            based on your interests, profile, and queries — delivering 
-                            relevant, real-time updates in your preferred language.
+                            An AI-powered platform that automatically creates 
+                            customizable, curriculum-aligned educational worksheets 
+                            across subjects and grade levels—saving teachers time 
+                            and enhancing learning effectiveness.
                         </p>
                     </div>
 
@@ -29,10 +30,10 @@ function Footer() {
                                 <a href="#" className="hover:underline">How It Works</a>
                             </li>
                             <li>
-                                <a href="#" className="hover:underline">Create Profile</a>
+                                <a href="#" className="hover:underline">Generate Worksheet</a>
                             </li>
                             <li>
-                                <a href="#" className="hover:underline">News Feed</a>
+                                <a href="#" className="hover:underline">Features</a>
                             </li>
                             <li>
                                 <a href="#" className="hover:underline">Contact</a>
@@ -58,8 +59,8 @@ function Footer() {
                 </div>
 
                 {/* Bottom note */}
-                <div className="mt-10 text-center text-xs text-gray-500 dark:text-gray-500">
-                    © {new Date().getFullYear()} Personalized News Agent. All rights reserved.
+                <div className="mt-10 text-center text-xs text-gray-500">
+                    © {new Date().getFullYear()} Worksheet Generation Tool. All rights reserved.
                 </div>
             </footer>
         </div>
