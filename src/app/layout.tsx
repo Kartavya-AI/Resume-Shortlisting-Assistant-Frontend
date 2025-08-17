@@ -20,8 +20,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "  Worksheet Generation Tool",
-  description: "An AI-powered platform that automatically creates customizable, curriculum-aligned educational worksheets across subjects and grade levels—saving teachers time and enhancing learning effectiveness.",
+  title: " Resume Shortlisting Assistant",
+  description: "Automates resume evaluation and shortlisting, surfacing top candidates based on job fit, skills, and experience—reducing bias and administrative effort.",
 };
 
 export default function RootLayout({

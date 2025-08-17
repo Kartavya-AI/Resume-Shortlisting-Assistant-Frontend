@@ -8,39 +8,39 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion";
-import worksheetIllustration from "../../public/images/alberto-cognetti-jwuxSRW5PCk-unsplash.jpg";
+import resumeIllustration from "../../public/images/resume-genius-9si2noVCVH8-unsplash.jpg";
 import open from "../../public/images/share (1).png";
 
 const reviews = [
     {
-        name: "Ananya Sharma",
-        username: "@ananya_teacher",
-        body: "The worksheet generator saves me hours every week. I can instantly create practice sheets aligned with my grade-level curriculum.",
+        name: "Neha Kapoor",
+        username: "@neha_hr",
+        body: "The Resume Shortlisting Assistant has drastically reduced our screening time. We can now process thousands of applications in hours instead of weeks.",
     },
     {
-        name: "Rahul Mehta",
-        username: "@rahul_tutor",
-        body: "I love how customizable it is. Whether I need multiple-choice, fill-in-the-blank, or open-ended questions, it handles everything seamlessly.",
+        name: "Arjun Malhotra",
+        username: "@arjun_recruiter",
+        body: "I love how it highlights top candidates based on skills and experience. The scoring system makes shortlisting objective and data-driven.",
     },
     {
-        name: "Priya Verma",
-        username: "@priya_edtech",
-        body: "As part of an edtech team, this tool helps us deliver high-quality, auto-graded worksheets to students across different subjects and levels.",
+        name: "Simran Joshi",
+        username: "@simran_enterpriseHR",
+        body: "As part of an enterprise HR team, this tool integrates seamlessly with our ATS and helps us filter candidates with the exact qualifications we need.",
     },
     {
-        name: "Aditya Singh",
-        username: "@aditya_learning",
-        body: "The ability to align worksheets with specific learning objectives makes lesson planning so much easier and more effective.",
+        name: "Ravi Deshmukh",
+        username: "@ravi_startup",
+        body: "For our startup, this has been a game changer. Even without a dedicated HR team, we can confidently shortlist the best-fit candidates quickly.",
     },
     {
-        name: "Meera Iyer",
-        username: "@meera_instructor",
-        body: "The answer key generation is a lifesaver — assessments are quicker, and I can spend more time supporting my students.",
+        name: "Pooja Nair",
+        username: "@pooja_consultant",
+        body: "The ability to flag concerns like frequent job changes and gaps in employment helps us make better hiring decisions with less bias.",
     },
     {
-        name: "Rohan Desai",
-        username: "@rohan_hr",
-        body: "We use it for corporate training too. Generating skill evaluation worksheets for employees has never been this efficient.",
+        name: "Karan Patel",
+        username: "@karan_ld",
+        body: "We use it for internal promotions and skill evaluations too. Identifying leadership potential and standout achievements is now effortless.",
     },
 ];
 
@@ -86,29 +86,29 @@ const ReviewCard = ({
 
 const steps = [
     {
-        title: "Step 1: Select Subject & Grade",
+        title: "Step 1: Upload Resumes",
         description:
-            "Start by choosing the subject area and grade level for your worksheet. The system uses this input to align content with curriculum standards. (API: /select-subject-grade)",
+            "Import resumes in bulk across formats (PDF, DOCX, TXT) from job boards, email, or ATS. The system parses and structures data automatically. (API: /upload-resumes)",
     },
     {
-        title: "Step 2: Customize Question Types",
+        title: "Step 2: Define Role Profile",
         description:
-            "Pick from multiple choice, fill-in-the-blank, short answer, matching, labeling, or open-ended formats to match your teaching needs. (API: /choose-question-types)",
+            "Set job description, required skills, experience, education, and certifications. Customize weighting for different qualifications. (API: /define-role-profile)",
     },
     {
-        title: "Step 3: Generate Worksheet",
+        title: "Step 3: Automated Parsing & Matching",
         description:
-            "The system automatically creates a curriculum-aligned worksheet with editable questions and instructions. (API: /generate-worksheet)",
+            "AI extracts key details—skills, projects, outcomes, leadership traits—and matches candidates against the role profile. (API: /parse-match)",
     },
     {
-        title: "Step 4: Review & Edit",
+        title: "Step 4: Shortlist & Flag",
         description:
-            "Easily customize the generated content—adjust questions, tweak instructions, or align with specific learning objectives. (API: /edit-worksheet)",
+            "System ranks candidates, highlights achievements, and flags concerns such as gaps or frequent role changes for recruiter review. (API: /shortlist-flag)",
     },
     {
-        title: "Step 5: Export & Share",
+        title: "Step 5: Export & Integrate",
         description:
-            "Download the worksheet in print-ready, digital, or interactive auto-graded formats, complete with answer keys. (API: /export-worksheet)",
+            "Export shortlisted profiles with scores and insights. Integrate seamlessly with HR tools or ATS for next hiring stages. (API: /export-results)",
     },
 ];
 
@@ -116,34 +116,37 @@ export default function Home() {
     return (
         <main className="mx-auto bg-zinc-100">
             <section className="pt-20 px-4 md:px-36 flex flex-col justify-center items-center text-center">
+                {/* Badge */}
                 <div className="group mb-5 relative mx-auto flex items-center justify-center rounded-full px-2 py-1.5 bg-zinc-100 shadow-zinc-500 shadow-md inset-shadow-2xs inset-shadow-white">
                     <h1 className="bg-zinc-100 shadow-zinc-500 shadow-md inset-shadow-2xs inset-shadow-white rounded-full h-8 w-8 flex justify-center items-center">
-                        📄
+                        🤖
                     </h1>
 
                     <div className="text-sm px-3 font-medium text-zinc-600">
-                        AI-Powered Worksheet Generation Tool
+                        AI-Powered Resume Shortlisting Assistant
                     </div>
                 </div>
 
+                {/* Heading */}
                 <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight text-primary mb-6">
-                    Create Curriculum-Aligned Worksheets Instantly — Smarter
-                    Teaching with AI
+                    Shortlist Top Candidates Instantly — Smarter Hiring with AI
                 </h1>
 
+                {/* Subheading */}
                 <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8">
-                    Automatically generate customizable worksheets for any
-                    subject or grade level. Save time, eliminate manual
-                    formatting, and deliver engaging, high-quality learning
-                    materials with answer keys included.
+                    Automate resume evaluation and shortlisting. Parse thousands
+                    of resumes, match skills and experience to role profiles,
+                    and surface the best-fit candidates — reducing bias and
+                    saving valuable hiring time.
                 </p>
 
+                {/* CTA */}
                 <div>
                     <Link
-                        href="/generate"
+                        href="/shortlist"
                         className="rounded-full px-4 py-2 text-xl hover:shadow-lg cursor-pointer text-zinc-600 bg-zinc-100 shadow-zinc-500 shadow-md flex items-center gap-2"
                     >
-                        <span>Generate My Worksheet</span>
+                        <span>Start Shortlisting Resumes</span>
                         <div className="rounded-full h-9 w-9 flex justify-center items-center hover:shadow-lg cursor-pointer text-zinc-600 bg-zinc-100 shadow-zinc-500 shadow-md">
                             <Image
                                 src={open}
@@ -186,19 +189,20 @@ export default function Home() {
                 {/* Text Section */}
                 <div className="md:w-1/2 text-center md:text-left space-y-4 order-2 md:order-1">
                     <h2 className="text-3xl md:text-5xl font-bold text-primary">
-                        Generate Worksheets Instantly with AI.
+                        Shortlist Resumes Instantly with AI.
                     </h2>
                     <p className="text-lg text-muted-foreground">
-                        Our AI Worksheet Generator helps educators save time by
-                        creating curriculum-aligned, customizable worksheets
-                        across subjects and grade levels. Focus more on
-                        teaching, and let AI handle the prep work.
+                        Our AI Resume Shortlisting Assistant automates
+                        evaluation by parsing thousands of resumes, matching
+                        candidates to role requirements, and surfacing top
+                        talent. Save time, reduce bias, and focus on smarter
+                        hiring decisions.
                     </p>
                     <div className="mt-4">
-                        <Link href="/generate">
+                        <Link href="/shortlist">
                             <button className="shadow-2xl">
                                 <span className="rounded-full px-4 py-2 text-xl hover:shadow-lg cursor-pointer text-zinc-600 bg-zinc-100 shadow-zinc-500 shadow-md inset-shadow-2xs inset-shadow-white">
-                                    ● Create Worksheet
+                                    ● Start Shortlisting
                                 </span>
                             </button>
                         </Link>
@@ -208,8 +212,8 @@ export default function Home() {
                 {/* Image Section */}
                 <div className="md:w-1/2 mt-10 md:mt-0 order-1 md:order-2 flex bg-zinc-100 shadow-zinc-500 shadow-md inset-shadow-2xs inset-shadow-white p-2 rounded-2xl justify-center">
                     <Image
-                        src={worksheetIllustration} // Replace with your Worksheet Generator illustration
-                        alt="AI-Powered Worksheet Generation"
+                        src={resumeIllustration} // Replace with illustration relevant to resume shortlisting
+                        alt="AI-Powered Resume Shortlisting"
                         className="w-full shadow-lg h-full rounded-lg object-cover"
                         width={10}
                         height={10}
@@ -247,15 +251,15 @@ export default function Home() {
                         className="bg-zinc-100 shadow-zinc-500 shadow-md inset-shadow-2xs inset-shadow-white rounded-2xl px-5 my-1"
                     >
                         <AccordionTrigger>
-                            1. What is the Worksheet Generation Tool?
+                            1. What is the Resume Shortlisting Assistant?
                         </AccordionTrigger>
                         <AccordionContent className="flex flex-col gap-4 text-balance">
                             <p>
-                                The Worksheet Generation Tool is an AI-powered
-                                platform that instantly creates customizable,
-                                curriculum-aligned worksheets across subjects
-                                and grade levels. It saves time while ensuring
-                                engaging and effective learning materials.
+                                It&apos;s an AI-powered tool that automates
+                                resume evaluation and shortlisting, surfacing
+                                top candidates based on job fit, skills, and
+                                experience. It reduces bias, saves time, and
+                                improves hiring quality.
                             </p>
                         </AccordionContent>
                     </AccordionItem>
@@ -269,11 +273,12 @@ export default function Home() {
                         </AccordionTrigger>
                         <AccordionContent className="flex flex-col gap-4 text-balance">
                             <p>
-                                Simply select the subject, grade level, and
-                                learning objective. The tool uses AI to generate
-                                worksheets with multiple question types, which
-                                you can fully customize before exporting for
-                                print or digital use.
+                                The assistant parses resumes in multiple
+                                formats, extracts key skills, education, and
+                                experiences, and matches them against job
+                                descriptions or custom role profiles. It then
+                                ranks candidates objectively using customizable
+                                weighting.
                             </p>
                         </AccordionContent>
                     </AccordionItem>
@@ -283,14 +288,14 @@ export default function Home() {
                         className="bg-zinc-100 shadow-zinc-500 shadow-md inset-shadow-2xs inset-shadow-white rounded-2xl px-5 my-1"
                     >
                         <AccordionTrigger>
-                            3. What types of questions can it generate?
+                            3. What filters can recruiters apply?
                         </AccordionTrigger>
                         <AccordionContent className="flex flex-col gap-4 text-balance">
                             <p>
-                                It supports multiple-choice, fill-in-the-blank,
-                                short answer, labeling, matching, and open-ended
-                                questions — giving educators flexibility for
-                                different teaching styles.
+                                Recruiters can filter candidates by education,
+                                certifications, keywords, project history,
+                                skills, outcomes, and even soft skills to
+                                identify the best fit quickly.
                             </p>
                         </AccordionContent>
                     </AccordionItem>
@@ -300,13 +305,14 @@ export default function Home() {
                         className="bg-zinc-100 shadow-zinc-500 shadow-md inset-shadow-2xs inset-shadow-white rounded-2xl px-5 my-1"
                     >
                         <AccordionTrigger>
-                            4. Does it include answer keys?
+                            4. Can it detect red flags in resumes?
                         </AccordionTrigger>
                         <AccordionContent className="flex flex-col gap-4 text-balance">
                             <p>
-                                Yes. Every worksheet automatically comes with an
-                                answer key, making assessment quick and
-                                efficient for teachers and tutors.
+                                Yes. The assistant flags issues like unexplained
+                                employment gaps, frequent job changes, or
+                                mismatches with role requirements — helping
+                                recruiters make informed decisions faster.
                             </p>
                         </AccordionContent>
                     </AccordionItem>
@@ -316,14 +322,14 @@ export default function Home() {
                         className="bg-zinc-100 shadow-zinc-500 shadow-md inset-shadow-2xs inset-shadow-white rounded-2xl px-5 my-1"
                     >
                         <AccordionTrigger>
-                            5. Can I customize the worksheets?
+                            5. Does it integrate with HR systems?
                         </AccordionTrigger>
                         <AccordionContent className="flex flex-col gap-4 text-balance">
                             <p>
-                                Absolutely. You can edit instructions, adjust
-                                difficulty levels, add or remove questions, and
-                                tailor content to match curriculum standards or
-                                individual student needs.
+                                Absolutely. It integrates seamlessly with
+                                existing Applicant Tracking Systems (ATS) and HR
+                                tools, so teams don’t need to change their
+                                current workflow.
                             </p>
                         </AccordionContent>
                     </AccordionItem>
@@ -333,13 +339,14 @@ export default function Home() {
                         className="bg-zinc-100 shadow-zinc-500 shadow-md inset-shadow-2xs inset-shadow-white rounded-2xl px-5 my-1"
                     >
                         <AccordionTrigger>
-                            6. What formats are supported?
+                            6. Who can benefit from this tool?
                         </AccordionTrigger>
                         <AccordionContent className="flex flex-col gap-4 text-balance">
                             <p>
-                                Worksheets can be exported for print (PDF),
-                                digital use (Word, Google Docs), or interactive
-                                platforms with auto-grading features.
+                                HR teams handling high-volume applications,
+                                enterprises, startups without dedicated
+                                recruiters, staffing agencies, and companies
+                                running seasonal or project-based hiring drives.
                             </p>
                         </AccordionContent>
                     </AccordionItem>
@@ -349,14 +356,14 @@ export default function Home() {
                         className="bg-zinc-100 shadow-zinc-500 shadow-md inset-shadow-2xs inset-shadow-white rounded-2xl px-5 my-1"
                     >
                         <AccordionTrigger>
-                            7. Who can use this tool?
+                            7. Does it reduce bias in hiring?
                         </AccordionTrigger>
                         <AccordionContent className="flex flex-col gap-4 text-balance">
                             <p>
-                                It&apos;s designed for teachers, tutors, edtech
-                                platforms, learning centers, and even HR teams
-                                for skill assessments — anyone who needs
-                                structured, effective practice materials.
+                                Yes. By focusing on skills, qualifications, and
+                                outcomes instead of personal identifiers, the
+                                tool helps organizations make fairer,
+                                data-driven hiring decisions.
                             </p>
                         </AccordionContent>
                     </AccordionItem>
@@ -370,11 +377,10 @@ export default function Home() {
                         </AccordionTrigger>
                         <AccordionContent className="flex flex-col gap-4 text-balance">
                             <p>
-                                Core features like worksheet generation and
-                                customization are free to try. Advanced features
-                                — such as bulk creation, auto-grading, and
-                                enterprise integrations — may require a
-                                subscription.
+                                Core resume parsing and ranking features are
+                                free to try. Advanced features — such as bulk
+                                resume uploads, custom weighting, and enterprise
+                                integrations — may require a subscription.
                             </p>
                         </AccordionContent>
                     </AccordionItem>
