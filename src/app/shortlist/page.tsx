@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import axios from "axios";
-
+const apiUrl=process.env.NEXT_PUBLIC_API_URL;
 interface Candidate {
   name: string;
   mobile: string;
@@ -26,7 +26,7 @@ export default function ResumeShortlistingPage() {
   const [error, setError] = useState<string>("");
 
   const API_URL =
-    "https://resume-shortlisting-service-977121587860.asia-south1.run.app/shortlist-resumes"; // replace with actual endpoint
+    `${apiUrl}/shortlist-resumes`; 
 
   /** Handle File Upload */
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
